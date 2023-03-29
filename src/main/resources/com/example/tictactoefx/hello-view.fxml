@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="paneGame" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="870.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tictactoefx.Game">
+   <children>
+      <Label fx:id="StepText" alignment="CENTER" contentDisplay="CENTER" layoutX="249.0" layoutY="59.0" prefHeight="66.0" prefWidth="426.0" textFill="#082183">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Button fx:id="key11" layoutX="320.0" layoutY="143.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button layoutX="676.0" layoutY="285.0" mnemonicParsing="false" onAction="#onPressSetting" prefHeight="66.0" prefWidth="165.0" text="Налаштування">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="key12" layoutX="429.0" layoutY="143.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button layoutX="676.0" layoutY="396.0" mnemonicParsing="false" onAction="#onExit" prefHeight="66.0" prefWidth="165.0" text="Вийти">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="key13" layoutX="538.0" layoutY="143.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key21" layoutX="320.0" layoutY="251.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key22" layoutX="429.0" layoutY="251.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key23" layoutX="538.0" layoutY="251.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key31" layoutX="320.0" layoutY="362.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key32" layoutX="429.0" layoutY="362.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button fx:id="key33" layoutX="538.0" layoutY="362.0" onAction="#onGameButtonClick" prefHeight="100.0" prefWidth="100.0">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Button>
+      <Button layoutX="82.0" layoutY="1.0" mnemonicParsing="false" onAction="#onInfo" prefHeight="66.0" prefWidth="165.0" text="Про програму">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="676.0" layoutY="176.0" mnemonicParsing="false" onAction="#onPlayTwo" prefHeight="66.0" prefWidth="165.0" text="Розпочати гру">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="GameText" layoutX="252.0" layoutY="47.0" strokeType="INSIDE" strokeWidth="0.0" text="Хід гравця:" textAlignment="CENTER" wrappingWidth="415.4580078125">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Button layoutX="676.0" layoutY="14.0" mnemonicParsing="false" onAction="#onPlayContinue" prefHeight="117.0" prefWidth="165.0" text="Продовжити">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Text fx:id="GameText1" layoutX="79.0" layoutY="177.0" strokeType="INSIDE" strokeWidth="0.0" text="Рахунок:" textAlignment="CENTER" wrappingWidth="165.0">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Text>
+      <Text fx:id="ScorePlayerText1" fill="#082183" layoutX="13.0" layoutY="266.0" strokeType="INSIDE" strokeWidth="0.0" wrappingWidth="304.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fx:id="ScorePlayerText2" fill="#082183" layoutX="14.0" layoutY="337.0" strokeType="INSIDE" strokeWidth="0.0" wrappingWidth="304.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Line endX="100.0" layoutX="163.0" layoutY="200.0" startX="-109.0" />
+   </children>
+</AnchorPane>
