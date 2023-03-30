@@ -1,11 +1,8 @@
 package com.example.tictactoefx;
 
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.LoadListener;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -157,8 +154,8 @@ public class Game {
         while(listIterator.hasNext()){
             Object el = listIterator.next();
 
-            Class classEl = el.getClass();
-            Class emptyClassButton = new Button().getClass();
+            Class<? extends Object> classEl = el.getClass();
+            Class<? extends Button> emptyClassButton = new Button().getClass();
 
             if (emptyClassButton == classEl){
 
@@ -190,7 +187,7 @@ public class Game {
     }
 
     @FXML
-    protected void onExit() throws IOException {
+    protected void onExit(ActionEvent actionEvent) {
 
         System.exit(0);
 
