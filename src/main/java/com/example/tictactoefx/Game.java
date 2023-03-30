@@ -72,7 +72,6 @@ public class Game {
             game.arrTic[row_int][col_int] = game.currentPlayer;
             btn.setText(game.currentPlayer.sign);
 
-            Updateform();
             boolean result = game.payoutСheck(game.currentPlayer, game.arrTic);
 
             if (result == true){
@@ -83,6 +82,7 @@ public class Game {
                 ScorePlayerText1.setText(Player.player1.name + ": " + Player.player1.score);
                 ScorePlayerText2.setText(Player.player2.name + ": " + Player.player2.score);
                 currentPlayerThis = game.currentPlayer;
+                Updateform();
                 game = null;
                 return;
             }
@@ -93,6 +93,8 @@ public class Game {
                 game.currentPlayer = Player.player1;
             }
 
+            Updateform();
+
             currentPlayerThis = game.currentPlayer;
 
             if (game.step == 9){
@@ -100,6 +102,7 @@ public class Game {
                 GameText.setFill(Color.RED);
                 StepText.setText("");
                 game = null;
+                Updateform();
                 return;
             }
 
